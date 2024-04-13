@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.core.app.NotificationCompat.Action.SemanticAction
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.tema1.adapters.AnimalListAdapter
 import com.example.tema1.models.AfricaAnimalModel
 import com.example.tema1.models.AnimalModel
 import com.example.tema1.models.AnimalOrigin
@@ -16,6 +18,7 @@ import com.example.tema1.models.AustraliaAnimalModel
 import com.example.tema1.models.EuropeAnimalModel
 import com.example.tema1.models.NorthAmericaAnimalModel
 import com.example.tema1.models.SouthAmericaAnimalModel
+import kotlin.math.log
 
 class AnimalListFragment : Fragment() {
     override fun onCreateView(
@@ -88,5 +91,10 @@ class AnimalListFragment : Fragment() {
         val shuffledAnimals = animalList.shuffled()
 
         val adapter = AnimalListAdapter(shuffledAnimals)
+
+        view?.findViewById<RecyclerView>(R.id.rv_animal_list)?.apply {
+            this.layoutManager = layoutManager
+            this.adapter = adapter
+        }
     }
 }
