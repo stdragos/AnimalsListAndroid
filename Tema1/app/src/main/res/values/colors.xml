@@ -6,4 +6,11 @@
     <color name="gray">#B6B6B6</color>
     <color name="green">#4CAF50</color>
     <color name="talpa">#4E342E</color>
+    <color name="africa_origin">#D3BD33</color>
+    <color name="antarctica_origin">#257ED6</color>
+    <color name="asia_origin">#F44336</color>
+    <color name="australia_origin">#512DA8</color>
+    <color name="europe_origin">#46a832</color>
+    <color name="north_america_origin">#964B00</color>
+    <color name="south_america_origin">#F57C00</color>
 </resources>

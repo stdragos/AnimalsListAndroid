@@ -8,8 +8,30 @@
     <fragment
         android:id="@+id/fragment_list"
         android:name="com.example.tema1.AnimalListFragment"
-        android:label="Login"
+        android:label="List"
         tools:layout="@layout/fragment_animal_list">
+        <action
+            android:id="@+id/action_fragment_list_to_fragment_details"
+            app:destination="@id/fragment_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="com.example.tema1.AnimalDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_animal_details">
+        <argument
+            android:name="animal_name"
+            app:argType="string"
+            />
+        <argument
+            android:name="animal_origin"
+            app:argType="integer"
+            />
+        <argument
+            android:name="animal_description"
+            app:argType="string"
+            />
     </fragment>
 
 </navigation>

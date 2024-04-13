@@ -1,5 +1,7 @@
 package com.example.tema1.models
 
+import android.os.Parcelable
+
 enum class AnimalOrigin(
     val key: Int
 ) {
