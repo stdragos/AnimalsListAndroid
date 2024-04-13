@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.tema1.models.AnimalModel
 import com.example.tema1.models.AnimalOrigin
@@ -62,5 +64,14 @@ class AnimalDetailsFragment : Fragment() {
         view.findViewById<TextView>(R.id.tv_animal_description).text = arguments.animalDescription.toString()
 
         lLayout.setBackgroundColor(color)
+
+        requireActivity().onBackPressedDispatcher
+            .addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    findNavController().popBackStack()
+                }
+            })
     }
+
+
 }
