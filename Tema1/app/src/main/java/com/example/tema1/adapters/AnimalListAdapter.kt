@@ -91,7 +91,7 @@ class AnimalListAdapter(
     inner class EuropeViewHolder(view: View, listener: onItemClickListener) : ViewHolder(view, mListener) {
         fun bind(animal: EuropeAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "Europe"
         }
     }
 
@@ -99,42 +99,42 @@ class AnimalListAdapter(
 
         fun bind(animal: AfricaAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "Africa"
         }
     }
 
     inner class AntarcticaViewHolder(view: View, listener: onItemClickListener) : ViewHolder(view, mListener) {
         fun bind(animal: AntarcticaAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "Antarctica"
         }
     }
 
     inner class SouthAmericaViewHolder(view: View, listener: onItemClickListener) : ViewHolder(view, mListener) {
         fun bind(animal: SouthAmericaAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "South America"
         }
     }
 
     inner class NorthAmericaViewHolder(view: View, listener: onItemClickListener) : ViewHolder(view, mListener) {
         fun bind(animal: NorthAmericaAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "North America"
         }
     }
 
     inner class AsiaViewHolder(view: View, listener: onItemClickListener) : ViewHolder(view, mListener) {
         fun bind(animal: AsiaAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "Asia"
         }
     }
 
     inner class AustraliaViewHolder(view: View, listener: onItemClickListener) : ViewHolder(view, mListener) {
         fun bind(animal: AustraliaAnimalModel) {
             animalNameTextView.text = animal.name
-            animalOriginTextView.text = animal.origin.name
+            animalOriginTextView.text = "Australia"
         }
     }
 

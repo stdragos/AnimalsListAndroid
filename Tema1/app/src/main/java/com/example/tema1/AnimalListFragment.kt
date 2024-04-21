@@ -40,261 +40,59 @@ class AnimalListFragment : Fragment() {
         val layoutManager = LinearLayoutManager(context)
 
         val animalList = listOf(
-            SouthAmericaAnimalModel(
-                1,
-                "Panthera onca",
-                "Panthera is a genus within the Felidae family that was named and first described by the German naturalist Lorenz Oken in 1816. The British taxonomist Pocock revised the classification of this genus in 1916 as comprising the species lion, tiger, jaguar, and leopard on the basis of cranial features. Results of genetic analysis indicate that the snow leopard also belongs to the Panthera, a classification that was accepted by IUCN assessors in 2008."
-            ),
-            EuropeAnimalModel(
-                2,
-                "Ursus arctos",
-                "The brown bear (Ursus arctos) is a large bear species found across Eurasia and North America. In North America, the populations of brown bears are called grizzly bears, while the subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear. It is one of the largest living terrestrial members of the order Carnivora, rivaled in size only by its closest relative, the polar bear (Ursus maritimus), which is much less variable in size and slightly larger on average."
-            ),
-            AntarcticaAnimalModel(
-                3,
-                "Aptenodytes forsteri",
-                "The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica"
-            ),
-            NorthAmericaAnimalModel(
-                4,
-                "Bison bison",
-                "The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Their historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750."
-            ),
-            SouthAmericaAnimalModel(
-                5,
-                "Panthera onca",
-                "Panthera is a genus within the Felidae family that was named and first described by the German naturalist Lorenz Oken in 1816. The British taxonomist Pocock revised the classification of this genus in 1916 as comprising the species lion, tiger, jaguar, and leopard on the basis of cranial features. Results of genetic analysis indicate that the snow leopard also belongs to the Panthera, a classification that was accepted by IUCN assessors in 2008."
-            ),
-            EuropeAnimalModel(
-                6,
-                "Ursus arctos",
-                "The brown bear (Ursus arctos) is a large bear species found across Eurasia and North America. In North America, the populations of brown bears are called grizzly bears, while the subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear. It is one of the largest living terrestrial members of the order Carnivora, rivaled in size only by its closest relative, the polar bear (Ursus maritimus), which is much less variable in size and slightly larger on average."
-            ),
-            AntarcticaAnimalModel(
-                7,
-                "Aptenodytes forsteri",
-                "The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica"
-            ),
-            AsiaAnimalModel(
-                8,
-                "Elephas maximus",
-                "The Asian elephant, also known as the Asiatic elephant, is the only living species of the genus Elephas and is distributed throughout the Indian subcontinent and Southeast Asia, from India in the west, Nepal in the north, Sumatra in the south, and to Borneo in the east."
-            ),
-            NorthAmericaAnimalModel(
-                9,
-                "Bison bison",
-                "The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Their historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750."
-            ),
-            SouthAmericaAnimalModel(
-                10,
-                "Panthera onca",
-                "Panthera is a genus within the Felidae family that was named and first described by the German naturalist Lorenz Oken in 1816. The British taxonomist Pocock revised the classification of this genus in 1916 as comprising the species lion, tiger, jaguar, and leopard on the basis of cranial features. Results of genetic analysis indicate that the snow leopard also belongs to the Panthera, a classification that was accepted by IUCN assessors in 2008."
-            ),
-            EuropeAnimalModel(
-                11,
-                "Ursus arctos",
-                "The brown bear (Ursus arctos) is a large bear species found across Eurasia and North America. In North America, the populations of brown bears are called grizzly bears, while the subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear. It is one of the largest living terrestrial members of the order Carnivora, rivaled in size only by its closest relative, the polar bear (Ursus maritimus), which is much less variable in size and slightly larger on average."
-            ),
-            AntarcticaAnimalModel(
-                12,
-                "Aptenodytes forsteri",
-                "The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica"
-            ),
-            AsiaAnimalModel(
-                13,
-                "Elephas maximus",
-                "The Asian elephant, also known as the Asiatic elephant, is the only living species of the genus Elephas and is distributed throughout the Indian subcontinent and Southeast Asia, from India in the west, Nepal in the north, Sumatra in the south, and to Borneo in the east."
-            ),
-            NorthAmericaAnimalModel(
-                14,
-                "Bison bison",
-                "The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Their historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750."
-            ),
-            SouthAmericaAnimalModel(
-                15,
-                "Panthera onca",
-                "Panthera is a genus within the Felidae family that was named and first described by the German naturalist Lorenz Oken in 1816. The British taxonomist Pocock revised the classification of this genus in 1916 as comprising the species lion, tiger, jaguar, and leopard on the basis of cranial features. Results of genetic analysis indicate that the snow leopard also belongs to the Panthera, a classification that was accepted by IUCN assessors in 2008."
-            ),
-            EuropeAnimalModel(
-                16,
-                "Ursus arctos",
-                "The brown bear (Ursus arctos) is a large bear species found across Eurasia and North America. In North America, the populations of brown bears are called grizzly bears, while the subspecies that inhabits the Kodiak Islands of Alaska is known as the Kodiak bear. It is one of the largest living terrestrial members of the order Carnivora, rivaled in size only by its closest relative, the polar bear (Ursus maritimus), which is much less variable in size and slightly larger on average."
-            ),
-            AntarcticaAnimalModel(
-                17,
-                "Aptenodytes forsteri",
-                "The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica"
-            ),
-            AsiaAnimalModel(
-                18,
-                "Elephas maximus",
-                "The Asian elephant, also known as the Asiatic elephant, is the only living species of the genus Elephas and is distributed throughout the Indian subcontinent and Southeast Asia, from India in the west, Nepal in the north, Sumatra in the south, and to Borneo in the east."
-            ),
-            NorthAmericaAnimalModel(
-                19,
-                "Bison bison",
-                "The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Their historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750."
-            ),
-            SouthAmericaAnimalModel(
-                20,
-                "Panthera onca",
-                "Panthera is a genus within the Felidae family that was named and first described by the German naturalist Lorenz Oken in 1816. The British taxonomist Pocock revised the classification of this genus in 1916 as comprising the species lion, tiger, jaguar, and leopard on the basis of cranial features. Results of genetic analysis indicate that the snow leopard also belongs to the Panthera, a classification that was accepted by IUCN assessors in 2008."
-            ),
-            SouthAmericaAnimalModel(
-                21,
-                "Lama glama",
-                "The llama (/ˈlɑːmə/; Spanish pronunciation: [ˈʝama]) (Lama glama) is a domesticated South American camelid, widely used as a meat and pack animal by Andean cultures since the Pre-Columbian era."
-            ),
-            EuropeAnimalModel(
-                22,
-                "Vulpes vulpes",
-                "The red fox (Vulpes vulpes) is the largest of the true foxes and the most geographically spread member of the Carnivora, being distributed across the entire Northern Hemisphere from the Arctic Circle to North Africa, Central America, and Asia."
-            ),
-            AntarcticaAnimalModel(
-                23,
-                "Chionis albus",
-                "The snowy sheathbill (Chionis albus) is a small, somewhat pigeon-like bird that feeds on carrion, invertebrates, and seaweed. It is the only land bird native to the Antarctic continent."
-            ),
-            AsiaAnimalModel(
-                24,
-                "Ailuropoda melanoleuca",
-                "The giant panda (Ailuropoda melanoleuca), also known as the panda bear or simply the panda, is a bear native to south central China. It is characterised by large, black patches around its eyes, over the ears, and across its round body. The name \"giant panda\" is sometimes used to distinguish it from the red panda, a neighboring musteloid."
-            ),
-            NorthAmericaAnimalModel(
-                25,
-                "Canis lupus",
-                "The gray wolf (Canis lupus), also known as the timber wolf or western wolf, is a canine native to the wilderness and remote areas of Eurasia and North America. It is the largest extant member of its family"
-            ),
-            SouthAmericaAnimalModel(
-                26,
-                "Ocelot",
-                "The ocelot (Leopardus pardalis) is a medium-sized wild cat native to the southwestern United States, Mexico, Central, and South America. It is listed as Least Concern on the IUCN Red List as the population is estimated to comprise more than 40,000 mature individuals and is considered stable."
-            ),
-            AsiaAnimalModel(
-                27,
-                "Indian elephant",
-                "The Indian elephant (Elephas maximus indicus) is one of three extant recognized subspecies of the Asian elephant and native to mainland Asia."
-            ),
-            EuropeAnimalModel(
-                28,
-                "Eurasian lynx",
-                "The Eurasian lynx (Lynx lynx) is a medium-sized wild cat native to Northern, Central and Eastern Europe to Central Asia and Siberia, the Tibetan Plateau, and the Himalayas."
-            ),
-            AntarcticaAnimalModel(
-                29,
-                "Emperor penguin",
-                "The emperor penguin (Aptenodytes forsteri) is the tallest and heaviest of all living penguin species and is endemic to Antarctica."
-            ),
-            NorthAmericaAnimalModel(
-                30,
-                "American bison",
-                "The American bison or simply bison (Bison bison), also commonly known as the American buffalo or simply buffalo, is an American species of bison that once roamed North America in vast herds. Their historical range, by 9000 BCE, is described as the great bison belt, a tract of rich grassland that ran from Alaska to the Gulf of Mexico, east to the Atlantic Seaboard (nearly to the Atlantic tidewater in some areas) as far north as New York and south to Georgia and, according to some sources, down to Florida, with sightings in North Carolina near Buffalo Ford on the Catawba River as late as 1750."
-            ),
-            AustraliaAnimalModel(
-                31,
-                "Macropus rufus",
-                "The red kangaroo (Macropus rufus) is the largest of all kangaroos, the largest terrestrial mammal native to Australia, and the largest extant marsupial. It is found across mainland Australia, avoiding only the more fertile areas in the south, the east coast, and the northern rainforests."
-            ),
-            AfricaAnimalModel(
-                32,
-                "Panthera leo",
-                "The lion (Panthera leo) is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic"
-            ),
-            AsiaAnimalModel(
-                33,
-                "Elephas maximus",
-                "The Asian elephant, also known as the Asiatic elephant, is the only living species of the genus Elephas and is distributed throughout the Indian subcontinent and Southeast Asia, from India in the west, Nepal in the north, Sumatra in the south, and to Borneo in the east."
-            ),
-            AfricaAnimalModel(
-                34,
-                "Giraffa camelopardalis",
-                "The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies."
-            ),
-            AustraliaAnimalModel(
-                35,
-                "Ornithorhynchus anatinus",
-                "The platypus (Ornithorhynchus anatinus), sometimes referred to as the duck-billed platypus, is a semiaquatic, egg-laying mammal endemic to eastern Australia, including Tasmania."
-            ),
-            AfricaAnimalModel(
-                36,
-                "Loxodonta africana",
-                "The African bush elephant (Loxodonta africana), also known as the African savanna elephant, is the largest living terrestrial animal with bulls reaching a shoulder height of up to 3.96 m (13.0 ft)."
-            ),
-            AustraliaAnimalModel(
-                37,
-                "Sarcophilus harrisii",
-                "The Tasmanian devil (Sarcophilus harrisii) is a carnivorous marsupial of the family Dasyuridae. It was once native to mainland Australia and is now found in the wild only on the island state of Tasmania, including tiny east-coast Maria Island where there is a conservation project with disease-free animals."
-            ),
-            AfricaAnimalModel(
-                38,
-                "Hippopotamus amphibius",
-                "The common hippopotamus (Hippopotamus amphibius), or hippo, is a large, mostly herbivorous, semi-aquatic mammal and ungulate native to sub-Saharan Africa."
-            ),
-            AustraliaAnimalModel(
-                39,
-                "Phascolarctos cinereus",
-                "The koala (Phascolarctos cinereus, or, inaccurately, koala bear) is an arboreal herbivorous marsupial native to Australia."
-            ),
-            AfricaAnimalModel(
-                40,
-                "Gorilla beringei",
-                "The eastern gorilla (Gorilla beringei) is a critically endangered species of the genus Gorilla and the largest living primate."
-            ),
-            AustraliaAnimalModel(
-                41,
-                "Dromaius novaehollandiae",
-                "The emu (Dromaius novaehollandiae) is the second-largest living bird by height, after its ratite relative, the ostrich. It is endemic to Australia where it is the largest native bird and the only extant member of the genus Dromaius."
-            ),
-            AfricaAnimalModel(
-                42,
-                "Acinonyx jubatus",
-                "The cheetah (Acinonyx jubatus) is a large cat native to Africa and central Iran. It is the fastest land animal, capable of running at speeds up to 80 to 96 km/h (50 to 60 mph), and as such has several adaptations for speed, including a light build, long thin legs, and a long tail."
-            ),
-            AustraliaAnimalModel(
-                43,
-                "Tachyglossus aculeatus",
-                "The short-beaked echidna (Tachyglossus aculeatus) is one of four living species of echidna and the only member of the genus Tachyglossus. The short-beaked echidna is covered in fur and spines and has a distinctive snout and a specialized tongue that allows it to feed on ants and termites."
-            ),
-            AfricaAnimalModel(
-                44,
-                "Pan troglodytes",
-                "The common chimpanzee (Pan troglodytes), also known as the robust chimpanzee, is a species of great ape. The common chimpanzee is usually called the chimpanzee (or chimp), though this term can be used to refer to both species in the genus Pan: the common chimpanzee and the closely related bonobo, formerly called the pygmy chimpanzee."
-            ),
-            AustraliaAnimalModel(
-                45,
-                "Vombatus ursinus",
-                "The common wombat (Vombatus ursinus), also known as the coarse-haired wombat or bare-nosed wombat, is a marsupial, one of three extant species of wombats and the only one in the genus Vombatus."
-            ),
-            AfricaAnimalModel(
-                46,
-                "Giraffa camelopardalis",
-                "The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies."
-            ),
-            AustraliaAnimalModel(
-                47,
-                "Ornithorhynchus anatinus",
-                "The platypus (Ornithorhynchus anatinus), sometimes referred to as the duck-billed platypus, is a semiaquatic, egg-laying mammal endemic to eastern Australia, including Tasmania."
-            ),
-            AfricaAnimalModel(
-                48,
-                "Loxodonta africana",
-                "The African bush elephant (Loxodonta africana), also known as the African savanna elephant, is the largest living terrestrial animal with bulls reaching a shoulder height of up to 3.96 m (13.0 ft)."
-            ),
-            AustraliaAnimalModel(
-                49,
-                "Sarcophilus harrisii",
-                "The Tasmanian devil (Sarcophilus harrisii) is a carnivorous marsupial of the family Dasyuridae. It was once native to mainland Australia and is now found in the wild only on the island state of Tasmania, including tiny east-coast Maria Island where there is a conservation project with disease-free animals."
-            ),
-            AfricaAnimalModel(
-                50,
-                "Hippopotamus amphibius",
-                "The common hippopotamus (Hippopotamus amphibius), or hippo, is a large, mostly herbivorous, semi-aquatic mammal and ungulate native to sub-Saharan Africa."
-            ),
+            AsiaAnimalModel(1, "Snow Leopard", "The snow leopard, native to Central and South Asia, is a solitary and elusive big cat, well-adapted to mountainous terrain with its thick fur and long tail for balance."),
+            SouthAmericaAnimalModel(2, "Sloth", "Found in the forests of South America, sloths are slow-moving mammals that spend most of their time hanging from trees, feeding on leaves, and exhibiting a calm demeanor."),
+            AfricaAnimalModel(3, "Giraffe", "With its long neck and legs, the giraffe is an iconic herbivore of the African savannas, known for its graceful movements as it browses on leaves from tall trees."),
+            NorthAmericaAnimalModel(4, "American Black Bear", "Omnivorous and adaptable, the American black bear is widely distributed across North America, varying in coat colors and primarily inhabiting forested areas."),
+            EuropeAnimalModel(5, "European Hedgehog", "A nocturnal garden dweller, the European hedgehog is a spiny mammal known for its habit of curling into a ball when threatened."),
+            AustraliaAnimalModel(6, "Kangaroo", "An iconic marsupial known for its powerful hind legs and ability to hop at high speeds, kangaroos are native to Australia and are characterized by the pouch in which they carry their young."),
+            AsiaAnimalModel(7, "Red Panda", "Native to the eastern Himalayas and southwestern China, the red panda is an arboreal mammal with a distinctive red fur coat and a diet primarily consisting of bamboo leaves."),
+            AfricaAnimalModel(8, "Rhino", "Recognized for its large size and distinctive horn on its nose, the rhinoceros is a herbivorous mammal found in various habitats across Africa."),
+            NorthAmericaAnimalModel(9, "Bald Eagle", "A symbolic bird of prey known for its white head and powerful talons, the bald eagle is native to North America and often inhabits coastal areas and lakeshores."),
+            EuropeAnimalModel(10, "European Badger", "With its black and white markings, the European badger is a nocturnal mammal found in a variety of habitats across Europe, often living in underground burrows."),
+            SouthAmericaAnimalModel(11, "Capybara", "The capybara is the largest rodent in the world, native to South America and often found near water, where it feeds on aquatic plants and grasses."),
+            AfricaAnimalModel(12, "African Elephant", "As the largest land animal, the African elephant roams the savannas and forests of Africa in search of vegetation, using its long trunk to gather food and water, and its tusks for various tasks including digging and defense."),
+            EuropeAnimalModel(13, "Eurasian Lynx", "The Eurasian lynx is a medium-sized wild cat inhabiting European forests and mountains, recognized for its tufted ears and short tail. It preys on small to medium-sized mammals, and its elusive nature makes it challenging to spot in the wild."),
+            SouthAmericaAnimalModel(14, "Jaguar", "Native to South America, the jaguar is a powerful big cat with a distinctive rosette pattern on its coat. It is an apex predator, capable of hunting a wide variety of prey including large mammals, reptiles, and fish."),
+            AsiaAnimalModel(15, "Asian Elephant", "Similar to its African counterpart, the Asian elephant is a large land mammal found in the forests and grasslands of Asia. It plays a significant cultural and ecological role in the regions where it inhabits."),
+            AustraliaAnimalModel(16, "Koala", "Endemic to Australia, the koala is a marsupial known for its cuddly appearance and diet consisting mainly of eucalyptus leaves. Despite its cute demeanor, it has a unique digestive system adapted to a low-nutrient diet."),
+            AntarcticaAnimalModel(17, "Emperor Penguin", "The largest penguin species, the emperor penguin, is well-adapted to the harsh conditions of Antarctica. It forms large colonies for breeding, with males incubating the eggs in a huddle while females forage for food."),
+            NorthAmericaAnimalModel(18, "Gray Wolf", "Once widespread across North America, the gray wolf is a highly social carnivore known for its pack behavior and howling communication. It plays a crucial role in ecosystems as a top predator, regulating prey populations."),
+            EuropeAnimalModel(19, "Alpine Ibex", "Found in the Alpine regions of Europe, the alpine ibex is a mountain-dwelling goat species known for its impressive agility and large, curved horns. It navigates steep cliffs with ease, grazing on grasses and herbs."),
+            SouthAmericaAnimalModel(20, "Anaconda", "The anaconda is a large snake species native to the jungles and swamps of South America. It is one of the heaviest snakes in the world and is known for its constricting method of hunting prey."),
+            AfricaAnimalModel(21, "Hippopotamus", "The hippopotamus is a large, semi-aquatic mammal found in rivers and lakes throughout sub-Saharan Africa. Despite its appearance, it is one of the most dangerous animals in Africa, known for its territorial behavior and powerful jaws."),
+            EuropeAnimalModel(22, "Eurasian Beaver", "The Eurasian beaver is a semi-aquatic rodent known for its dam-building behavior, which creates habitats for a variety of other species. Once widespread in Europe, it has been successfully reintroduced in many areas."),
+            NorthAmericaAnimalModel(23, "Mountain Lion", "Also known as a cougar or puma, the mountain lion is a large cat species native to the Americas. Despite its name, it inhabits a variety of habitats, from mountains to forests, and is known for its solitary nature."),
+            AustraliaAnimalModel(24, "Platypus", "The platypus is a unique mammal endemic to Australia, known for its duck-bill, webbed feet, and ability to lay eggs. It is one of only a few monotremes, or egg-laying mammals, in the world."),
+            SouthAmericaAnimalModel(25, "Tapir", "Tapirs are large, herbivorous mammals found in the jungles and forests of Central and South America. They play a crucial role in seed dispersal and are characterized by their distinct trunk-like snout."),
+            AsiaAnimalModel(26, "Japanese Macaque", "Native to Japan, the Japanese macaque is a monkey species known for its adaptation to cold climates and unique behavior, such as bathing in hot springs during the winter."),
+            EuropeAnimalModel(27, "European Robin", "The European robin is a small bird species with a red breast, commonly found across Europe. It is known for its melodious song and is often associated with Christmas due to its appearance on holiday cards."),
+            AfricaAnimalModel(28, "Leopard", "With its striking spotted coat, the leopard is a big cat species found throughout Africa and parts of Asia. It is a skilled hunter, capable of climbing trees to stash its prey and avoid competition from other predators."),
+            SouthAmericaAnimalModel(29, "Chameleon", "Chameleons are lizard species known for their ability to change color to blend in with their surroundings. Found primarily in Madagascar and parts of Africa, they have long, sticky tongues for catching insects."),
+            AsiaAnimalModel(30, "Giant Asian Hornet", "The giant Asian hornet is a large wasp species native to East Asia. Known for its aggressive behavior and powerful sting, it is a formidable predator of other insects, including honeybees."),
+            NorthAmericaAnimalModel(31, "American Alligator", "The American alligator is a large reptile native to the southeastern United States. It inhabits freshwater habitats such as swamps, marshes, and rivers, where it preys on fish, amphibians, birds, and mammals."),
+            SouthAmericaAnimalModel(32, "Toucan", "Toucans are colorful bird species native to Central and South America, known for their large, brightly colored bills. They primarily feed on fruit but will also consume insects and small vertebrates."),
+            AsiaAnimalModel(33, "Asian Water Buffalo", "Domesticated for thousands of years, the Asian water buffalo is an important livestock animal in Asia, used for plowing fields, transportation, and as a source of milk and meat."),
+            EuropeAnimalModel(34, "Eurasian Eagle-Owl", "One of the largest owl species in the world, the Eurasian eagle-owl is native to Europe and Asia. It is a powerful predator, capable of hunting a variety of prey including small mammals and birds."),
+            AfricaAnimalModel(35, "African Wild Dog", "Also known as painted wolves, African wild dogs are highly social carnivores found in sub-Saharan Africa. They live in packs and are skilled hunters, using coordinated tactics to bring down prey."),
+            SouthAmericaAnimalModel(36, "Caiman", "Caimans are crocodilian reptiles native to Central and South America. Smaller than their close relatives, alligators and crocodiles, they inhabit freshwater habitats such as rivers, lakes, and swamps."),
+            AsiaAnimalModel(37, "Indian Peafowl", "The Indian peafowl, or peacock, is a colorful bird species native to the Indian subcontinent. Known for its elaborate plumage and courtship displays, it is a symbol of beauty and elegance."),
+            NorthAmericaAnimalModel(38, "American Bison", "Once numbering in the millions across North America, the American bison is an iconic symbol of the American West. It is a large herbivore that plays a crucial role in grassland ecosystems."),
+            EuropeAnimalModel(39, "European Otter", "The European otter is a semi-aquatic mammal found in rivers, lakes, and coastal areas across Europe. It is a skilled swimmer and hunter, preying on fish, crustaceans, and amphibians."),
+            SouthAmericaAnimalModel(40, "Alpaca", "Domesticated for their soft wool, alpacas are camelid mammals native to the Andes mountains of South America. They are prized for their fiber, which is used to make clothing and textiles."),
+            AfricaAnimalModel(41, "African Penguin", "Found along the coast of South Africa and Namibia, the African penguin is a species of penguin adapted to warmer climates. It is known for its distinctive black and white plumage and braying vocalizations."),
+            EuropeAnimalModel(42, "Red Deer", "One of the largest deer species in Europe, the red deer is native to forests and woodlands across the continent. It is a herbivore, feeding on grasses, leaves, and shoots, and is known for its impressive antlers."),
+            SouthAmericaAnimalModel(43, "Capybara", "The capybara is the largest rodent in the world, native to South America and often found near water, where it feeds on aquatic plants and grasses."),
+            AsiaAnimalModel(44, "Clouded Leopard", "Native to the forests of Southeast Asia, the clouded leopard is a medium-sized wild cat with distinctive cloud-like markings on its coat. It is an agile climber and skilled hunter."),
+            AfricaAnimalModel(45, "Meerkat", "Found in arid regions of southern Africa, meerkats are small mongoose species known for their social behavior and cooperative hunting. They live in groups called mobs and are highly vigilant for predators."),
+            EuropeAnimalModel(46, "European Lynx", "The European lynx is a medium-sized wild cat native to forests and mountains in Europe. It is known for its tufted ears and short tail, and preys on small to medium-sized mammals."),
+            SouthAmericaAnimalModel(47, "Spectacled Bear", "The spectacled bear, also known as the Andean bear, is the only bear species native to South America. It is named for the distinctive markings around its eyes and is primarily herbivorous, feeding on fruits and vegetation."),
+            AsiaAnimalModel(48, "Giant Panda", "Endemic to China, the giant panda is a bear species known for its distinctive black and white fur. It primarily feeds on bamboo and is considered a symbol of conservation efforts worldwide."),
+            NorthAmericaAnimalModel(49, "American Beaver", "The American beaver is a semi-aquatic rodent found in rivers, streams, and lakes across North America. It is known for its dam-building behavior, which creates habitats for a variety of other species."),
+            AfricaAnimalModel(50, "African Buffalo", "Also known as the Cape buffalo, the African buffalo is a large bovine species found in African grasslands and woodlands. It is known for its unpredictable temperament and is considered one of the most dangerous animals in Africa."),
         )
 
-        val shuffledAnimals = animalList.shuffled()
-
-        val adapter = AnimalListAdapter(shuffledAnimals)
+        val adapter = AnimalListAdapter(animalList)
 
         view?.findViewById<RecyclerView>(R.id.rv_animal_list)?.apply {
             this.layoutManager = layoutManager
@@ -304,56 +102,56 @@ class AnimalListFragment : Fragment() {
         adapter.setOnItemClickListener(object : AnimalListAdapter.onItemClickListener {
             override fun onItemClick(position: Int) {
 
-                Toast.makeText(context, "Item clicked $position", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(context, "Item clicked $position", Toast.LENGTH_SHORT).show()
 
                 var name: String = ""
                 var description: String = ""
                 var origin: Int = 0
 
-                when (shuffledAnimals[position].origin.key) {
+                when (animalList[position].origin.key) {
                     AnimalOrigin.EUROPE.key -> {
-                        name = (shuffledAnimals[position] as EuropeAnimalModel).name
-                        description = (shuffledAnimals[position] as EuropeAnimalModel).description
+                        name = (animalList[position] as EuropeAnimalModel).name
+                        description = (animalList[position] as EuropeAnimalModel).description
                         origin = AnimalOrigin.EUROPE.key
                     }
 
                     AnimalOrigin.AFRICA.key -> {
-                        name = (shuffledAnimals[position] as AfricaAnimalModel).name
-                        description = (shuffledAnimals[position] as AfricaAnimalModel).description
+                        name = (animalList[position] as AfricaAnimalModel).name
+                        description = (animalList[position] as AfricaAnimalModel).description
                         origin = AnimalOrigin.AFRICA.key
                     }
 
                     AnimalOrigin.ANTARCTICA.key -> {
-                        name = (shuffledAnimals[position] as AntarcticaAnimalModel).name
+                        name = (animalList[position] as AntarcticaAnimalModel).name
                         description =
-                            (shuffledAnimals[position] as AntarcticaAnimalModel).description
+                            (animalList[position] as AntarcticaAnimalModel).description
                         origin = AnimalOrigin.ANTARCTICA.key
                     }
 
                     AnimalOrigin.SOUTH_AMERICA.key -> {
-                        name = (shuffledAnimals[position] as SouthAmericaAnimalModel).name
+                        name = (animalList[position] as SouthAmericaAnimalModel).name
                         description =
-                            (shuffledAnimals[position] as SouthAmericaAnimalModel).description
+                            (animalList[position] as SouthAmericaAnimalModel).description
                         origin = AnimalOrigin.SOUTH_AMERICA.key
                     }
 
                     AnimalOrigin.NORTH_AMERICA.key -> {
-                        name = (shuffledAnimals[position] as NorthAmericaAnimalModel).name
+                        name = (animalList[position] as NorthAmericaAnimalModel).name
                         description =
-                            (shuffledAnimals[position] as NorthAmericaAnimalModel).description
+                            (animalList[position] as NorthAmericaAnimalModel).description
                         origin = AnimalOrigin.NORTH_AMERICA.key
                     }
 
                     AnimalOrigin.ASIA.key -> {
-                        name = (shuffledAnimals[position] as AsiaAnimalModel).name
-                        description = (shuffledAnimals[position] as AsiaAnimalModel).description
+                        name = (animalList[position] as AsiaAnimalModel).name
+                        description = (animalList[position] as AsiaAnimalModel).description
                         origin = AnimalOrigin.ASIA.key
                     }
 
                     AnimalOrigin.AUSTRALIA.key -> {
-                        name = (shuffledAnimals[position] as AustraliaAnimalModel).name
+                        name = (animalList[position] as AustraliaAnimalModel).name
                         description =
-                            (shuffledAnimals[position] as AustraliaAnimalModel).description
+                            (animalList[position] as AustraliaAnimalModel).description
                         origin = AnimalOrigin.AUSTRALIA.key
                     }
 
